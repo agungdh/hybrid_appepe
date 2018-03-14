@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html lang="en">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -29,31 +29,31 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
         <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+        <title>APPEPE</title>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/sha512.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/sweetalert.js"></script>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-            <div id="data_mahasiswa"></div>
-        </div>
         <script type="text/javascript">
-            $.get( "https://apps.agungdh.com/api_mahasiswa/", function( data ) {
-                $.each(data, function( index, value ) {
-                    $("#data_mahasiswa").append("<p>" + value.npm + " = " + value.nama + "</p>");
-                });
-            });
+            var json = {};
+            var config = {
+                base_url : "http://192.168.43.24/api_appepe/"
+            };
         </script>
+        <div id="badan"></div>
+        <script type="text/javascript" src="js/utama.js"></script>
     </body>
 </html>
