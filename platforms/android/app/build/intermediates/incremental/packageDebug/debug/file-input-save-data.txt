@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Mar 14 20:55:09 WIB 2018
+#Wed Mar 14 21:10:54 WIB 2018
 25.file=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug/www/css/bootstrap.css
 41.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug
 25.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug

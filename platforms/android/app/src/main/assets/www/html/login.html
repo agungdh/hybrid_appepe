@@ -60,7 +60,11 @@
 
 	function validasiForm() {	
 		if ($.trim($("#nim").val()) == "" || $.trim($("#password").val()) == "") {
-			swal("Data kosong !!!");
+			swal({
+				title: "ERROR",
+				text: "Data masih ada yang KOSONG !!!",
+				type: "warning"
+			});
 			return false;
 		} else {
 			return true;
