@@ -46,9 +46,14 @@
 	    },
 	    function(data, status){
 	        if (data.login == 1) {
-	        	swal("Login BERHASIL !!!");
+	        	json.login = data;
+	        	navigasi("dataPelanggaran");
 	        } else {
-	        	swal("Login GAGAL !!!");
+	        	swal({
+					title: "ERROR",
+					text: "Login GAGAL !!!",
+					type: "warning"
+				});
 	        }
 	    });			
 	}

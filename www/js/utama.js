@@ -1,7 +1,7 @@
 $(function() {
-   tampilHalamanLogin(); 
+   navigasi("login"); 
 });
 
-function tampilHalamanLogin() {
-	$("#badan").load("./html/login.html");
+function navigasi(html) {
+	$("#badan").load("./html/" + html + ".html");
 }
