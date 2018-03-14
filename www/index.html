@@ -46,6 +46,14 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+            <div id="data_mahasiswa"></div>
         </div>
+        <script type="text/javascript">
+            $.get( "ajax/test.html", function( data ) {
+                $.each(data, function( index, value ) {
+                    $("#data_mahasiswa").append("<p>" + value.npm + " = " + value.nama + "</p>");
+                });
+            });
+        </script>
     </body>
 </html>
