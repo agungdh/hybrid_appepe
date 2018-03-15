@@ -34,6 +34,7 @@ function cekLogin(nim, password) {
              text: "Login GAGAL !!!",
              type: "error"
             });
+         navigasi("login");
         }
     }, function(response) {
       alert(response.status);

@@ -1,29 +1,3 @@
-<style type="text/css">
-    .modal {
-        display:    none;
-        position:   fixed;
-        z-index:    1000;
-        top:        0;
-        left:       0;
-        height:     100%;
-        width:      100%;
-        background: rgba( 255, 255, 255, .8 ) 
-                    url('images/loading.gif') 
-                    50% 50% 
-                    no-repeat;
-    }
-
-    body.loading {
-        overflow: hidden;   
-    }
-
-    body.loading .modal {
-        display: block;
-    }
-</style>
-
-<div class="modal"></div>
-
 <div class="containter">
 	<table class="table" id="tabel">
 		<thead>
@@ -39,11 +13,11 @@
 
 <script type="text/javascript">
 	$(function() {
+	    $("body").attr("class", "loading");	
 		ambilData();			
 	});
 
 	function ambilData() {
-	    $("body").attr("class", "loading");	
 		$.post(config.base_url + "api/data_pelanggaran",
 	    {
 	        username: json.login.user.username,

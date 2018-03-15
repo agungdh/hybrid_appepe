@@ -5,6 +5,11 @@
 </style>
 
 <div class="containter">
+	<center>
+		<div class="col-xs-4"><button id="mnPelaporan" class="btn btn-info">Pelaporan</button></div>
+		<div class="col-xs-4"><button id="mnPelanggaran" class="btn btn-info">Data Pelanggaran</button></div>
+		<div class="col-xs-4"><button id="mnLogout" class="btn btn-info">Logout</button></div>
+	</center>
 	<div id="formUtama" class="form-body">
 		<div class="form-group">
 		    <input type="date" class="form-control" id="tanggal" placeholder="Tanggal">
@@ -12,12 +17,12 @@
 		<div class="form-group">
 			<textarea class="form-control" id="keterangan" placeholder="Keterangan" rows="5"></textarea>
 		</div>
-		<center>
-			<div class="col-xs-4"><button id="kamera" class="btn btn-info"><i class="glyphicon glyphicon-camera"></i></button></div>
-			<div class="col-xs-4"><button id="galeri" class="btn btn-info"><i class="glyphicon glyphicon-picture"></i></button></div>
-			<div class="col-xs-4"><button id="video" class="btn btn-info"><i class="glyphicon glyphicon-facetime-video"></i></button></div>
-		</center>
 	</div>
+	<center>
+		<div class="col-xs-4"><button id="kamera" class="btn btn-info"><i class="glyphicon glyphicon-camera"></i></button></div>
+		<div class="col-xs-4"><button id="galeri" class="btn btn-info"><i class="glyphicon glyphicon-picture"></i></button></div>
+		<div class="col-xs-4"><button id="video" class="btn btn-info"><i class="glyphicon glyphicon-facetime-video"></i></button></div>
+	</center>
 </div>
 
 <script type="text/javascript">
@@ -32,8 +37,32 @@
 	$("#video").on('click', function () {
 		ambilVideo();
 	});
+
+	$("#mnPelaporan").on('click', function () {
+		pelaporan();
+	});
+
+	$("#mnPelanggaran").on('click', function () {
+		pelanggaran();
+	});
+
+	$("#mnLogout").on('click', function () {
+		logout();
+	});
 </script>
 
 <script type="text/javascript">
-	
+	function logout() {
+		delete json.login.user;
+		window.localStorage.removeItem("login");
+		navigasi('login');
+	}
+
+	function pelaporan() {
+		navigasi('menuUtama');
+	}
+
+	function pelanggaran() {
+		navigasi('dataPelanggaran');
+	}
 </script>

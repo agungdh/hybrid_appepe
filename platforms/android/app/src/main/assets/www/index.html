@@ -39,11 +39,34 @@
         <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
         <link rel="stylesheet" type="text/css" href="css/datatables.css">
         <link rel="stylesheet" type="text/css" href="css/utama.css">
+        <style type="text/css">
+            .modal {
+                display:    none;
+                position:   fixed;
+                z-index:    1000;
+                top:        0;
+                left:       0;
+                height:     100%;
+                width:      100%;
+                background: rgba( 255, 255, 255, .8 ) 
+                            url('images/loading.gif') 
+                            50% 50% 
+                            no-repeat;
+            }
+
+            body.loading {
+                overflow: hidden;   
+            }
+
+            body.loading .modal {
+                display: block;
+            }
+        </style>
         <title>APPEPE</title>
         <script type="text/javascript">
             var json = {};
             var config = {
-                base_url : "http://10.42.0.1/api_appepe/"
+                base_url : "http://192.168.43.24/api_appepe/"
             };
         </script>
         <script type="text/javascript" src="cordova.js"></script>
@@ -55,7 +78,10 @@
         <script type="text/javascript" src="js/datatables.js"></script>
     </head>
     <body>
-        <div id="badan"></div>
+        <div class="modal"></div>   
+        <div id="badan">
+            <button id="btnAwal" style="display: none"></button>
+        </div>
         <script type="text/javascript" src="js/utama.js"></script>
     </body>
 </html>
