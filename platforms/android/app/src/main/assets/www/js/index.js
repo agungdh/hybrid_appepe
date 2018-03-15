@@ -16,20 +16,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-function bukaGaleri(selection) {
+function bukaGaleri() {
+    navigator.camera.getPicture(onSuccess, onFail, { quality: 100,
+        destinationType: Camera.DestinationType.FILE_URI });
 
-    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
+    function onSuccess(imageURI) {
+        var image = document.getElementById('myImage');
+        image.src = imageURI;
+        swal(imageURI);
+    }
 
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
-
-        swal('ambil');
-
-    }, function cameraError(error) {
-        swal("Unable to obtain picture: " + error, "app");
-
-    }, options);
+    function onFail(message) {
+        alert('Failed because: ' + message);
+    }    
 }
 
 function testAwal() {
