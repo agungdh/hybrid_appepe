@@ -31,25 +31,25 @@
 </script>
 
 <script type="text/javascript">
-	function cekLogin(nim, password) {
-		$.post(config.base_url + "api/login",
-	    {
-	        username: nim,
-	        password: password
-	    },
-	    function(data, status){
-	        if (data.login == 1) {
-	        	json.login = data;
-	        	navigasi("menuUtama");
-	        } else {
-	        	swal({
-					title: "ERROR",
-					text: "Login GAGAL !!!",
-					type: "warning"
-				});
-	        }
-	    });			
-	}
+	// function cekLogin(nim, password) {
+	// 	$.post(config.base_url + "api/login",
+	//     {
+	//         username: nim,
+	//         password: password
+	//     },
+	//     function(data, status){
+	//         if (data.login == 1) {
+	//         	json.login = data;
+	//         	navigasi("menuUtama");
+	//         } else {
+	//         	swal({
+	// 				title: "ERROR",
+	// 				text: "Login GAGAL !!!",
+	// 				type: "warning"
+	// 			});
+	//         }
+	//     });			
+	// }
 
 	function resetDetail() {
 		$("#nim").val("");

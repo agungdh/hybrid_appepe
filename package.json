@@ -14,12 +14,14 @@
         "cordova-browser": "^5.0.3",
         "cordova-plugin-whitelist": "^1.3.3",
         "web": "0.0.2",
-        "cordova-plugin-camera": "^4.0.2"
+        "cordova-plugin-camera": "^4.0.2",
+        "cordova-plugin-advanced-http": "^1.11.0"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-camera": {}
+            "cordova-plugin-camera": {},
+            "cordova-plugin-advanced-http": {}
         },
         "platforms": [
             "android",

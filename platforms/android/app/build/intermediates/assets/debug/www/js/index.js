@@ -16,7 +16,31 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-function bukaGaleri() {
+function cekLogin(nim, password) {
+    const options = {
+      method: 'post',
+      data: { username: nim, password: password }
+    };
+     
+    cordova.plugin.http.sendRequest(config.base_url + "api/login", options, function(response) {
+     if (response.data != "") {
+         var data = JSON.parse(response.data);
+         json.login = data;
+         navigasi("menuUtama");
+        } else {
+         swal({
+             title: "ERROR",
+             text: "Login GAGAL !!!",
+             type: "warning"
+            });
+        }
+    }, function(response) {
+      alert(response.status);
+      alert(response.error);
+    });
+}
+
+function ambilFoto() {
     navigator.camera.getPicture(onSuccess, onFail, { quality: 100,
         destinationType: Camera.DestinationType.FILE_URI });
 
