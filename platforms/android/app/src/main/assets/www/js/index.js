@@ -26,6 +26,7 @@ function cekLogin(nim, password) {
      if (response.data != "") {
          var data = JSON.parse(response.data);
          json.login = data;
+         window.localStorage.setItem('login', JSON.stringify(json.login));
          navigasi("menuUtama");
         } else {
          swal({
@@ -42,23 +43,21 @@ function cekLogin(nim, password) {
 
 function apiPost(uri) {
     cordova.plugin.http.uploadFile(config.base_url + "api/test/test", {
-        pesan: 'cobak cobak'
+        pesan: 'cobak cobak',
+        username: json.login.user.username,
+        password: json.login.user.password
     }, {}, uri, 'file', function(response) {
         swal({
          title: "SUCCESS",
          text: "Upload BERHASIL !!!",
          type: "success"
         });
-        // swal("Upload Berhasil !!!");
-        // alert(JSON.stringify(response));
     }, function(response) {
         swal({
          title: "ERROR",
          text: "Upload GAGAL !!!",
          type: "error"
         });
-        // swal("Upload Gagal !!!");
-        // alert(JSON.stringify(response));
     });
 }
 
@@ -75,11 +74,9 @@ function ambilFotoGaleri() {
 
     function onPhotoURISuccess(imageURI) {
         apiPost('file://' + imageURI);
-        // alert(imageURI);
     }
 
     function onFail(message) {
-        // alert(message);
     }
 }
 
@@ -88,13 +85,11 @@ function ambilFoto() {
         destinationType: Camera.DestinationType.FILE_URI });
 
     function onSuccess(imageURI) {
-        // alert(imageURI);
         apiPost(imageURI);
-
     }
 
     function onFail(message) {
-        // alert('Failed because: ' + message);
+
     }    
 }
 
@@ -102,17 +97,12 @@ function ambilVideo() {
     navigator.device.capture.captureVideo(onSuccess, onFail, { limit: 1});
 
     function onSuccess(videoURI) {
-        // alert(videoURI[0].fullPath);
         apiPost(videoURI[0].fullPath);
     }
 
     function onFail(message) {
-        // alert('Failed because: ' + message);
-    }    
-}
 
-function testAwal() {
-    swal('test');
+    }    
 }
 
 var app = {
