@@ -23,21 +23,60 @@ function cekLogin(nim, password) {
     };
      
     cordova.plugin.http.sendRequest(config.base_url + "api/login", options, function(response) {
-   alert(response.data);
-   //   if (response.data.login == 1) {
-   //       json.login = response.data;
-   //       navigasi("menuUtama");
-   //      } else {
-   //       alert({
-            //  title: "ERROR",
-            //  text: "Login GAGAL !!!",
-            //  type: "warning"
-            // });
-   //      }
+     if (response.data != "") {
+         var data = JSON.parse(response.data);
+         json.login = data;
+         navigasi("menuUtama");
+        } else {
+         swal({
+             title: "ERROR",
+             text: "Login GAGAL !!!",
+             type: "error"
+            });
+        }
     }, function(response) {
       alert(response.status);
       alert(response.error);
     });
+}
+
+function apiPostFoto(uri) {
+    cordova.plugin.http.uploadFile(config.base_url + "api/test/test", {
+        pesan: 'cobak cobak'
+    }, {}, uri, 'file', function(response) {
+        swal({
+         title: "SUCCESS",
+         text: "Upload BERHASIL !!!",
+         type: "success"
+        });
+        // swal("Upload Berhasil !!!");
+        // alert(JSON.stringify(response));
+    }, function(response) {
+        swal({
+         title: "ERROR",
+         text: "Upload GAGAL !!!",
+         type: "error"
+        });
+        // swal("Upload Gagal !!!");
+        // alert(JSON.stringify(response));
+    });
+}
+
+function ambilFotoGaleri(selection) {
+
+    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+    var options = setOptions(srcType);
+    var func = createNewFileEntry;
+
+    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        apiPostFoto(imageURI);
+        // Do something
+
+    }, function cameraError(error) {
+        alert('Failed because: ' + message);
+
+    }, options);
 }
 
 function ambilFoto() {
@@ -45,9 +84,22 @@ function ambilFoto() {
         destinationType: Camera.DestinationType.FILE_URI });
 
     function onSuccess(imageURI) {
-        var image = document.getElementById('myImage');
-        image.src = imageURI;
-        swal(imageURI);
+        apiPostFoto(imageURI);
+        // swal(imageURI);
+
+    }
+
+    function onFail(message) {
+        alert('Failed because: ' + message);
+    }    
+}
+
+function ambilVideo() {
+    navigator.device.capture.captureVideo(onSuccess, onFail, { limit: 1});
+
+    function onSuccess(videoURI) {
+        apiPostFoto(videoURI[0].fullPath);
+        // swal(imageURI);
     }
 
     function onFail(message) {

@@ -17,13 +17,20 @@
 			<div class="col-xs-4"><button id="galeri" class="btn btn-info"><i class="glyphicon glyphicon-picture"></i></button></div>
 			<div class="col-xs-4"><button id="video" class="btn btn-info"><i class="glyphicon glyphicon-facetime-video"></i></button></div>
 		</center>
-		<img id="myImage" src="">
 	</div>
 </div>
 
 <script type="text/javascript">
 	$("#kamera").on('click', function () {
 		ambilFoto();
+	});
+
+	$("#galeri").on('click', function () {
+		ambilFotoGaleri();
+	});
+
+	$("#video").on('click', function () {
+		ambilVideo();
 	});
 </script>
 

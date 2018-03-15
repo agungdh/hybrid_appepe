@@ -11,15 +11,15 @@ INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/And
 	android:name
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:12:127-181
 manifest
-ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 MERGED from [com.android.support:support-v4:24.1.1] /home/a/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/d60cc7994bf4531083097323ecc297ee/AndroidManifest.xml:17:1-27:12
 MERGED from [:CordovaLib] /opt/lampp/htdocs/hybrid_appepe/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:102-135
 		INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml
@@ -108,6 +108,18 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:17:5-81
 	android:name
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:18:5-71
+	android:name
+		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:18:22-68
+uses-permission#android.permission.RECORD_VIDEO
+ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:19:5-71
+	android:name
+		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:19:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:20:22-77
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:13:13-116
 	android:resource

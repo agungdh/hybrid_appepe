@@ -62,16 +62,44 @@ function apiPostFoto(uri) {
     });
 }
 
+function ambilFotoGaleri(selection) {
+
+    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+    var options = setOptions(srcType);
+    var func = createNewFileEntry;
+
+    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        apiPostFoto(imageURI);
+        // Do something
+
+    }, function cameraError(error) {
+        alert('Failed because: ' + message);
+
+    }, options);
+}
+
 function ambilFoto() {
     navigator.camera.getPicture(onSuccess, onFail, { quality: 100,
         destinationType: Camera.DestinationType.FILE_URI });
 
     function onSuccess(imageURI) {
-        var image = document.getElementById('myImage');
-        image.src = imageURI;
         apiPostFoto(imageURI);
         // swal(imageURI);
 
+    }
+
+    function onFail(message) {
+        alert('Failed because: ' + message);
+    }    
+}
+
+function ambilVideo() {
+    navigator.device.capture.captureVideo(onSuccess, onFail, { limit: 1});
+
+    function onSuccess(videoURI) {
+        apiPostFoto(videoURI[0].fullPath);
+        // swal(imageURI);
     }
 
     function onFail(message) {
