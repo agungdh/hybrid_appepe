@@ -40,7 +40,7 @@ function cekLogin(nim, password) {
     });
 }
 
-function apiPostFoto(uri) {
+function apiPost(uri) {
     cordova.plugin.http.uploadFile(config.base_url + "api/test/test", {
         pesan: 'cobak cobak'
     }, {}, uri, 'file', function(response) {
@@ -62,21 +62,25 @@ function apiPostFoto(uri) {
     });
 }
 
-function ambilFotoGaleri(selection) {
+function ambilFotoGaleri() {
+    var pictureSource = navigator.camera.PictureSourceType;
+    var destinationType = navigator.camera.DestinationType;
+    var mediaType = navigator.camera.MediaType;
 
-    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
+    navigator.camera.getPicture(onPhotoURISuccess, onFail, {
+        destinationType: destinationType.FILE_URI,
+        mediaType: mediaType.ALLMEDIA,
+        sourceType: pictureSource.PHOTOLIBRARY
+    });
 
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+    function onPhotoURISuccess(imageURI) {
+        apiPost('file://' + imageURI);
+        // alert(imageURI);
+    }
 
-        apiPostFoto(imageURI);
-        // Do something
-
-    }, function cameraError(error) {
-        alert('Failed because: ' + message);
-
-    }, options);
+    function onFail(message) {
+        // alert(message);
+    }
 }
 
 function ambilFoto() {
@@ -84,13 +88,13 @@ function ambilFoto() {
         destinationType: Camera.DestinationType.FILE_URI });
 
     function onSuccess(imageURI) {
-        apiPostFoto(imageURI);
-        // swal(imageURI);
+        // alert(imageURI);
+        apiPost(imageURI);
 
     }
 
     function onFail(message) {
-        alert('Failed because: ' + message);
+        // alert('Failed because: ' + message);
     }    
 }
 
@@ -98,12 +102,12 @@ function ambilVideo() {
     navigator.device.capture.captureVideo(onSuccess, onFail, { limit: 1});
 
     function onSuccess(videoURI) {
-        apiPostFoto(videoURI[0].fullPath);
-        // swal(imageURI);
+        // alert(videoURI[0].fullPath);
+        apiPost(videoURI[0].fullPath);
     }
 
     function onFail(message) {
-        alert('Failed because: ' + message);
+        // alert('Failed because: ' + message);
     }    
 }
 

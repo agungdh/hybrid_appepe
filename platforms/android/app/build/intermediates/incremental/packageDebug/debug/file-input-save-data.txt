@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 15 13:45:18 WIB 2018
+#Thu Mar 15 14:10:42 WIB 2018
 60.set=ANDROID_RESOURCE
 52.set=ASSET
 53.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug
