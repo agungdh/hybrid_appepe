@@ -64,6 +64,10 @@
         "source": "/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png"
     },
     {
+        "merged": "/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
         "merged": "/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/res/merged/debug/mipmap-ldpi_icon.png.flat",
         "source": "/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/res/mipmap-ldpi/icon.png"
     },

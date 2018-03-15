@@ -16,6 +16,26 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function bukaGaleri(selection) {
+
+    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+    var options = setOptions(srcType);
+    var func = createNewFileEntry;
+
+    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        swal('ambil');
+
+    }, function cameraError(error) {
+        swal("Unable to obtain picture: " + error, "app");
+
+    }, options);
+}
+
+function testAwal() {
+    swal('test');
+}
+
 var app = {
     // Application Constructor
     initialize: function() {
