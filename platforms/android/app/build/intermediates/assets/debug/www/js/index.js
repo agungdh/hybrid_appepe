@@ -31,12 +31,34 @@ function cekLogin(nim, password) {
          swal({
              title: "ERROR",
              text: "Login GAGAL !!!",
-             type: "warning"
+             type: "error"
             });
         }
     }, function(response) {
       alert(response.status);
       alert(response.error);
+    });
+}
+
+function apiPostFoto(uri) {
+    cordova.plugin.http.uploadFile(config.base_url + "api/test/test", {
+        pesan: 'cobak cobak'
+    }, {}, uri, 'file', function(response) {
+        swal({
+         title: "SUCCESS",
+         text: "Upload BERHASIL !!!",
+         type: "success"
+        });
+        // swal("Upload Berhasil !!!");
+        // alert(JSON.stringify(response));
+    }, function(response) {
+        swal({
+         title: "ERROR",
+         text: "Upload GAGAL !!!",
+         type: "error"
+        });
+        // swal("Upload Gagal !!!");
+        // alert(JSON.stringify(response));
     });
 }
 
@@ -47,7 +69,9 @@ function ambilFoto() {
     function onSuccess(imageURI) {
         var image = document.getElementById('myImage');
         image.src = imageURI;
-        swal(imageURI);
+        apiPostFoto(imageURI);
+        // swal(imageURI);
+
     }
 
     function onFail(message) {

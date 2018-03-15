@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 15 11:55:26 WIB 2018
+#Thu Mar 15 12:10:18 WIB 2018
 76.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug
 5.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug
 91.file=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/exec.js

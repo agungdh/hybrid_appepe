@@ -31,26 +31,6 @@
 </script>
 
 <script type="text/javascript">
-	// function cekLogin(nim, password) {
-	// 	$.post(config.base_url + "api/login",
-	//     {
-	//         username: nim,
-	//         password: password
-	//     },
-	//     function(data, status){
-	//         if (data.login == 1) {
-	//         	json.login = data;
-	//         	navigasi("menuUtama");
-	//         } else {
-	//         	swal({
-	// 				title: "ERROR",
-	// 				text: "Login GAGAL !!!",
-	// 				type: "warning"
-	// 			});
-	//         }
-	//     });			
-	// }
-
 	function resetDetail() {
 		$("#nim").val("");
 		$("#password").val("");
@@ -59,7 +39,7 @@
 	function validasiForm() {	
 		if ($.trim($("#nim").val()) == "" || $.trim($("#password").val()) == "") {
 			swal({
-				title: "ERROR",
+				title: "WARNING",
 				text: "Data masih ada yang KOSONG !!!",
 				type: "warning"
 			});
