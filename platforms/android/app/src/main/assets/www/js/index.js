@@ -80,10 +80,11 @@ function ambilDataPelanggaran(nim, password) {
 }
 
 function apiPost(uri) {
-    cordova.plugin.http.uploadFile(config.base_url + "api/test/test", {
-        pesan: 'cobak cobak',
+    cordova.plugin.http.uploadFile(config.base_url + "api/upload_laporan", {
         username: json.login.user.username,
-        password: json.login.user.password
+        password: json.login.user.password,
+        tanggal: $("#tanggal").val(),
+        keterangan: $("#keterangan").val()
     }, {}, uri, 'file', function(response) {
         swal({
          title: "SUCCESS",
@@ -91,11 +92,7 @@ function apiPost(uri) {
          type: "success"
         });
     }, function(response) {
-        swal({
-         title: "ERROR",
-         text: "Upload GAGAL !!!",
-         type: "error"
-        });
+        alert(JSON.stringify(response));
     });
 }
 
