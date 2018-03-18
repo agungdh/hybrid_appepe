@@ -80,12 +80,14 @@ function ambilDataPelanggaran(nim, password) {
 }
 
 function apiPost(uri) {
+    $("body").attr("class", "loading"); 
     cordova.plugin.http.uploadFile(config.base_url + "api/upload_laporan", {
         username: json.login.user.username,
         password: json.login.user.password,
         tanggal: $("#tanggal").val(),
         keterangan: $("#keterangan").val()
     }, {}, uri, 'file', function(response) {
+        $("body").attr("class", ""); 
         swal({
          title: "SUCCESS",
          text: "Upload BERHASIL !!!",
