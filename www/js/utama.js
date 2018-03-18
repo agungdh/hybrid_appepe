@@ -1,3 +1,5 @@
+//function
+
 $(function() {
 	$("body").attr("class", "loading");	
 	if (window.localStorage.getItem("login") == undefined) {
@@ -15,10 +17,16 @@ function navigasi(html) {
 	$("#badan").load("./html/" + html + ".html");
 }
 
+function pad (str, max) {
+  str = str.toString();
+  return str.length < max ? pad("0" + str, max) : str;
+}
+
+//event handler
+
 $("#btnAwal").on('click', function () {
-	// $("#badan").append(json.login.user.username);
-	// $("#badan").append("<br>");
-	// $("#badan").append(json.login.user.password);
 	cekLogin(json.login.user.username, json.login.user.password);
 	$("body").attr("class", "");	
 });
+
+

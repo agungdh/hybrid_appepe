@@ -5,11 +5,6 @@
 </style>
 
 <div class="containter">
-	<center>
-		<div class="col-xs-4"><button id="mnPelaporan" class="btn btn-info">Pelaporan</button></div>
-		<div class="col-xs-4"><button id="mnPelanggaran" class="btn btn-info">Data Pelanggaran</button></div>
-		<div class="col-xs-4"><button id="mnLogout" class="btn btn-info">Logout</button></div>
-	</center>
 	<div id="formUtama" class="form-body">
 		<div class="form-group">
 		    <input type="date" class="form-control" id="tanggal" placeholder="Tanggal">
@@ -38,31 +33,5 @@
 		ambilVideo();
 	});
 
-	$("#mnPelaporan").on('click', function () {
-		pelaporan();
-	});
-
-	$("#mnPelanggaran").on('click', function () {
-		pelanggaran();
-	});
-
-	$("#mnLogout").on('click', function () {
-		logout();
-	});
-</script>
-
-<script type="text/javascript">
-	function logout() {
-		delete json.login.user;
-		window.localStorage.removeItem("login");
-		navigasi('login');
-	}
-
-	function pelaporan() {
-		navigasi('menuUtama');
-	}
-
-	function pelanggaran() {
-		navigasi('dataPelanggaran');
-	}
+	document.getElementById('tanggal').valueAsDate = new Date();
 </script>

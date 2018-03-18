@@ -315,24 +315,6 @@ module.exports = [
     "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
     "pluginId": "cordova-plugin-media-capture",
     "runs": true
-  },
-  {
-    "id": "cordova-plugin-nativestorage.mainHandle",
-    "file": "plugins/cordova-plugin-nativestorage/www/mainHandle.js",
-    "pluginId": "cordova-plugin-nativestorage",
-    "clobbers": [
-      "NativeStorage"
-    ]
-  },
-  {
-    "id": "cordova-plugin-nativestorage.LocalStorageHandle",
-    "file": "plugins/cordova-plugin-nativestorage/www/LocalStorageHandle.js",
-    "pluginId": "cordova-plugin-nativestorage"
-  },
-  {
-    "id": "cordova-plugin-nativestorage.NativeStorageError",
-    "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
-    "pluginId": "cordova-plugin-nativestorage"
   }
 ];
 module.exports.metadata = 
@@ -343,7 +325,7 @@ module.exports.metadata =
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-advanced-http": "1.11.0",
   "cordova-plugin-media-capture": "3.0.1",
-  "cordova-plugin-nativestorage": "2.3.1"
+  "cordova-plugin-console": "1.1.0"
 };
 // BOTTOM OF METADATA
 });

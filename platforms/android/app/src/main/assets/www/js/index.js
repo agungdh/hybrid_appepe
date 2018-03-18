@@ -27,6 +27,7 @@ function cekLogin(nim, password) {
          var data = JSON.parse(response.data);
          json.login = data;
          window.localStorage.setItem('login', JSON.stringify(json.login));
+         $("#navigasi").load('html/navigasi.html');
          navigasi("menuUtama");
         } else {
          swal({
@@ -36,6 +37,42 @@ function cekLogin(nim, password) {
             });
          navigasi("login");
         }
+    }, function(response) {
+      alert(response.status);
+      alert(response.error);
+    });
+}
+
+function ambilDataPelanggaran(nim, password) {
+    const options = {
+      method: 'post',
+      data: { username: nim, password: password }
+    };
+     
+    cordova.plugin.http.sendRequest(config.base_url + "api/data_pelanggaran", options, function(response) {
+      var data = JSON.parse(response.data);
+      if (data.status == 1) {
+            if (data.jumlah_pelanggaran > 0) {
+              $.each(data.pelanggaran, function( index, value ) {
+                $('#tabel').find('tbody').append(
+                  "<tr>\
+                  <td>" + value.tanggal_indo + "</td>\
+                  <td>" + value.jenis + "</td>\
+                  </tr>"
+                );  
+              });
+            }
+            $('#tabel').DataTable();
+            $("body").attr("class", "");  
+          } else {
+            swal({
+              title: "ERROR",
+              text: "Login GAGAL !!!",
+              type: "warning"
+            });
+            navigasi("login");
+            $("#navigasi").html('');
+          }
     }, function(response) {
       alert(response.status);
       alert(response.error);

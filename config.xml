@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="com.agungdh.appepe" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>APPEPE UBL</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Aplikasi Pelaporan Pelanggaran Mahasiswa Universitas Budi Luhur
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="agungdh@live.com" href="https://agungdh.com/">
+        AgungDH
     </author>
+    <icon src="res/icon.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -27,5 +28,4 @@
     <plugin name="cordova-plugin-advanced-http" spec="^1.11.0" />
     <plugin name="cordova-plugin-media-capture" spec="^3.0.1" />
     <engine name="android" spec="^7.0.0" />
-    <engine name="browser" spec="^5.0.3" />
 </widget>

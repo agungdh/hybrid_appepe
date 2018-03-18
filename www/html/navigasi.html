@@ -1,0 +1,36 @@
+<center>
+    <div class="col-xs-4"><button id="mnPelaporan" class="btn btn-info">Pelaporan</button></div>
+    <div class="col-xs-4"><button id="mnPelanggaran" class="btn btn-info">Data Pelanggaran</button></div>
+    <div class="col-xs-4"><button id="mnLogout" class="btn btn-info">Logout</button></div>
+</center>
+
+<script type="text/javascript">
+$("#mnPelaporan").on('click', function () {
+	pelaporan();
+});
+
+$("#mnPelanggaran").on('click', function () {
+	pelanggaran();
+});
+
+$("#mnLogout").on('click', function () {
+	logout();
+});
+</script>
+
+<script type="text/javascript">	
+function logout() {
+	delete json.login.user;
+	window.localStorage.removeItem("login");
+	navigasi('login');
+	$("#navigasi").html('');
+}
+
+function pelaporan() {
+	navigasi('menuUtama');
+}
+
+function pelanggaran() {
+	navigasi('dataPelanggaran');
+}
+</script>
