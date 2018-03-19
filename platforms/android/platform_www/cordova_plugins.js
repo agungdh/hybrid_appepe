@@ -315,6 +315,22 @@ module.exports = [
     "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
     "pluginId": "cordova-plugin-media-capture",
     "runs": true
+  },
+  {
+    "id": "cordova-plugin-video-editor.VideoEditor",
+    "file": "plugins/cordova-plugin-video-editor/www/VideoEditor.js",
+    "pluginId": "cordova-plugin-video-editor",
+    "clobbers": [
+      "VideoEditor"
+    ]
+  },
+  {
+    "id": "cordova-plugin-video-editor.VideoEditorOptions",
+    "file": "plugins/cordova-plugin-video-editor/www/VideoEditorOptions.js",
+    "pluginId": "cordova-plugin-video-editor",
+    "clobbers": [
+      "VideoEditorOptions"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -325,7 +341,7 @@ module.exports.metadata =
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-advanced-http": "1.11.0",
   "cordova-plugin-media-capture": "3.0.1",
-  "cordova-plugin-console": "1.1.0"
+  "cordova-plugin-video-editor": "1.1.3"
 };
 // BOTTOM OF METADATA
 });

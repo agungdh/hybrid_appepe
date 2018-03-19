@@ -18,6 +18,9 @@
     <feature name="Capture">
         <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
     </feature>
+    <feature name="VideoEditor">
+        <param name="android-package" value="org.apache.cordova.videoeditor.VideoEditor" />
+    </feature>
     <name>APPEPE UBL</name>
     <description>
         Aplikasi Pelaporan Pelanggaran Mahasiswa Universitas Budi Luhur

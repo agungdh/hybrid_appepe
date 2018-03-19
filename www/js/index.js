@@ -86,7 +86,7 @@ function apiPost(uri) {
         password: json.login.user.password,
         tanggal: $("#tanggal").val(),
         keterangan: $("#keterangan").val()
-    }, {}, uri, 'file', function(response) {
+    }, {}, encodeURI(uri), 'file', function(response) {
         $("body").attr("class", ""); 
         swal({
          title: "SUCCESS",
@@ -114,6 +114,7 @@ function ambilFotoGaleri() {
     }
 
     function onFail(message) {
+      // alert(JSON.stringify(message));
     }
 }
 
@@ -122,11 +123,12 @@ function ambilFoto() {
         destinationType: Camera.DestinationType.FILE_URI });
 
     function onSuccess(imageURI) {
+        // alert(imageURI);
         apiPost(imageURI);
     }
 
     function onFail(message) {
-
+      // alert(JSON.stringify(message));
     }    
 }
 
@@ -134,11 +136,42 @@ function ambilVideo() {
     navigator.device.capture.captureVideo(onSuccess, onFail, { limit: 1});
 
     function onSuccess(videoURI) {
-        apiPost(videoURI[0].fullPath);
+        $("body").attr("class", "loading"); 
+        VideoEditor.transcodeVideo(
+            videoTranscodeSuccess,
+            videoTranscodeError,
+            {
+                fileUri: videoURI[0].fullPath,
+                outputFileName: videoURI[0].name,
+                outputFileType: VideoEditorOptions.OutputFileType.MPEG4,
+                optimizeForNetworkUse: VideoEditorOptions.OptimizeForNetworkUse.YES,
+                saveToLibrary: true,
+                maintainAspectRatio: true,
+                width: 640,
+                height: 640,
+                videoBitrate: 1000000, // 1 megabit
+                audioChannels: 2,
+                audioSampleRate: 44100,
+                audioBitrate: 128000, // 128 kilobits
+                progress: function(info) {
+                    console.log('transcodeVideo progress callback, info: ' + info);
+                }
+            }
+        );
     }
 
     function onFail(message) {
+      // alert(JSON.stringify(message));
+    }    
 
+    function videoTranscodeSuccess(result) {
+      // alert('file://' + result);
+      apiPost('file://' + result);
+
+    }    
+
+    function videoTranscodeError(message) {
+      // alert(JSON.stringify(message));
     }    
 }
 

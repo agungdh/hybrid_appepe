@@ -18,6 +18,9 @@
     },
     "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-video-editor": {
+      "PACKAGE_NAME": "com.agungdh.appepe"
     }
   },
   "dependent_plugins": {
