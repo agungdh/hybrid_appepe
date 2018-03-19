@@ -106,7 +106,9 @@ function ambilFotoGaleriKamera() {
     navigator.camera.getPicture(onPhotoURISuccess, onFail, {
         destinationType: destinationType.FILE_URI,
         mediaType: mediaType.PICTURE,
-        sourceType: pictureSource.PHOTOLIBRARY
+        sourceType: pictureSource.PHOTOLIBRARY,
+        quality: 50,
+        correctOrientation : true
     });
 
     function onPhotoURISuccess(imageURI) {
@@ -184,7 +186,7 @@ function ambilFotoGaleriVideo() {
 
 function ambilFoto() {
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI });
+        destinationType: Camera.DestinationType.FILE_URI, correctOrientation : true });
 
     function onSuccess(imageURI) {
         // alert(imageURI);

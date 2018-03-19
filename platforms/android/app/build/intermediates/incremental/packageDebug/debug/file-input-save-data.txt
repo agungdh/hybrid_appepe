@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Mar 19 10:58:02 WIB 2018
+#Mon Mar 19 12:00:21 WIB 2018
 20.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 143.base=/opt/lampp/htdocs/hybrid_appepe/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 439.set=ANDROID_RESOURCE
