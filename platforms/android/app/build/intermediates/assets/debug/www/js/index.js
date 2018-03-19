@@ -98,14 +98,6 @@ function apiPost(uri) {
     });
 }
 
-if (fileUri.startsWith("content://")) {
-    //We have a native file path (usually returned when a user gets a file from their Android gallery)
-    //Let's convert to a fileUri that we can consume properly
-    window.FilePath.resolveNativePath(fileUri, function(localFileUri) {
-        window.resolveLocalFileSystemURL("file://" + localFileUri, function(fileEntry) {/*Do Something*/});
-    });
-}
-
 function ambilFotoGaleriKamera() {
     var pictureSource = navigator.camera.PictureSourceType;
     var destinationType = navigator.camera.DestinationType;
@@ -149,7 +141,40 @@ function ambilFotoGaleriVideo() {
     });
 
     function onPhotoURISuccess(imageURI) {
-        apiPost('file://' + imageURI);
+        $("body").attr("class", "loading"); 
+        VideoEditor.transcodeVideo(
+            videoTranscodeSuccess,
+            videoTranscodeError,
+            {
+                fileUri: encodeURI('file://' + imageURI),
+                outputFileName: imageURI.name,
+                outputFileType: VideoEditorOptions.OutputFileType.MPEG4,
+                optimizeForNetworkUse: VideoEditorOptions.OptimizeForNetworkUse.YES,
+                saveToLibrary: true,
+                maintainAspectRatio: true,
+                width: 640,
+                height: 640,
+                videoBitrate: 1000000, // 1 megabit
+                audioChannels: 2,
+                audioSampleRate: 44100,
+                audioBitrate: 128000, // 128 kilobits
+                progress: function(info) {
+                    console.log('transcodeVideo progress callback, info: ' + info);
+                }
+            }
+        );
+
+    function videoTranscodeSuccess(result) {
+      // alert('file://' + result);
+      apiPost('file://' + result);
+    }    
+
+    function videoTranscodeError(message) {
+      alert('error');
+      alert(message);
+    }
+
+        // apiPost('file://' + imageURI);
     }
 
     function onFail(message) {
