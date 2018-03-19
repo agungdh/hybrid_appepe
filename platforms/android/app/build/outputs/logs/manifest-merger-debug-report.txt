@@ -16,8 +16,16 @@ INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/And
 INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 MERGED from [com.github.ergovia-mobile:android-transcoder:v0.1.10R_ergovia] /home/aa/.gradle/caches/transforms-1/files-1.1/android-transcoder-v0.1.10R_ergovia.aar/89d04fef83cc4491e81b04983a5d6e21/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:24.1.1] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/bf653fab639b42a39ececab5dce9de9d/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:17:1-31:12
 MERGED from [:CordovaLib] /opt/lampp/htdocs/hybrid_appepe/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:17:1-31:12
 INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 INJECTED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
@@ -59,8 +67,24 @@ application
 ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:5:5-15:19
 MERGED from [com.github.ergovia-mobile:android-transcoder:v0.1.10R_ergovia] /home/aa/.gradle/caches/transforms-1/files-1.1/android-transcoder-v0.1.10R_ergovia.aar/89d04fef83cc4491e81b04983a5d6e21/AndroidManifest.xml:9:5-20
 MERGED from [com.github.ergovia-mobile:android-transcoder:v0.1.10R_ergovia] /home/aa/.gradle/caches/transforms-1/files-1.1/android-transcoder-v0.1.10R_ergovia.aar/89d04fef83cc4491e81b04983a5d6e21/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-v4:24.1.1] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/bf653fab639b42a39ececab5dce9de9d/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.1] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/bf653fab639b42a39ececab5dce9de9d/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
@@ -99,12 +123,28 @@ uses-sdk
 ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
 MERGED from [com.github.ergovia-mobile:android-transcoder:v0.1.10R_ergovia] /home/aa/.gradle/caches/transforms-1/files-1.1/android-transcoder-v0.1.10R_ergovia.aar/89d04fef83cc4491e81b04983a5d6e21/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.ergovia-mobile:android-transcoder:v0.1.10R_ergovia] /home/aa/.gradle/caches/transforms-1/files-1.1/android-transcoder-v0.1.10R_ergovia.aar/89d04fef83cc4491e81b04983a5d6e21/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:24.1.1] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/bf653fab639b42a39ececab5dce9de9d/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.1.1] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/bf653fab639b42a39ececab5dce9de9d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:21:5-23:54
 MERGED from [:CordovaLib] /opt/lampp/htdocs/hybrid_appepe/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /opt/lampp/htdocs/hybrid_appepe/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.1.1] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-24.1.1.aar/bf653fab639b42a39ececab5dce9de9d/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:16:42-71
 	android:minSdkVersion
@@ -131,3 +171,25 @@ ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/Androi
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:13:75-113
 	android:name
 		ADDED from /opt/lampp/htdocs/hybrid_appepe/platforms/android/app/src/main/AndroidManifest.xml:13:24-74
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/ca85bab0ddeda48a3fc332e7010f05a7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/d961006c43aedeb53fd06fc047ed3c24/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/a54642d3481ae9fbe255220b88cd6ece/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/cbc44b5594dcbe1e178831dff839b501/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/9772d98707bd74fc4e7d6cdacc0b3740/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/a1c7b881fa6d458d4ebbca64ea07627e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/f16cc2ded7b48f8a236089ee18cd3d4a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/6922ea883fd88a634612754cdff7120f/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /home/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/ede8d24a39b9b02172a289a16ea3f3af/AndroidManifest.xml:27:13-51

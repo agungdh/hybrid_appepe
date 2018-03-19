@@ -98,14 +98,53 @@ function apiPost(uri) {
     });
 }
 
-function ambilFotoGaleri() {
+if (fileUri.startsWith("content://")) {
+    //We have a native file path (usually returned when a user gets a file from their Android gallery)
+    //Let's convert to a fileUri that we can consume properly
+    window.FilePath.resolveNativePath(fileUri, function(localFileUri) {
+        window.resolveLocalFileSystemURL("file://" + localFileUri, function(fileEntry) {/*Do Something*/});
+    });
+}
+
+function ambilFotoGaleriKamera() {
     var pictureSource = navigator.camera.PictureSourceType;
     var destinationType = navigator.camera.DestinationType;
     var mediaType = navigator.camera.MediaType;
 
     navigator.camera.getPicture(onPhotoURISuccess, onFail, {
         destinationType: destinationType.FILE_URI,
-        mediaType: mediaType.ALLMEDIA,
+        mediaType: mediaType.PICTURE,
+        sourceType: pictureSource.PHOTOLIBRARY
+    });
+
+    function onPhotoURISuccess(imageURI) {
+        window.FilePath.resolveNativePath(imageURI, successCallback, errorCallback);
+
+        function successCallback(localFileUri) {
+          // alert(localFileUri);
+          apiPost(localFileUri);  
+        }
+        
+        function errorCallback(message) {
+          alert(JSON.stringify(message));
+        }
+        // alert(JSON.stringify(imageURI));
+        // apiPost('file://' + imageURI);
+    }
+
+    function onFail(message) {
+      // alert(JSON.stringify(message));
+    }
+}
+
+function ambilFotoGaleriVideo() {
+    var pictureSource = navigator.camera.PictureSourceType;
+    var destinationType = navigator.camera.DestinationType;
+    var mediaType = navigator.camera.MediaType;
+
+    navigator.camera.getPicture(onPhotoURISuccess, onFail, {
+        destinationType: destinationType.FILE_URI,
+        mediaType: mediaType.VIDEO,
         sourceType: pictureSource.PHOTOLIBRARY
     });
 
@@ -119,7 +158,7 @@ function ambilFotoGaleri() {
 }
 
 function ambilFoto() {
-    navigator.camera.getPicture(onSuccess, onFail, { quality: 100,
+    navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
         destinationType: Camera.DestinationType.FILE_URI });
 
     function onSuccess(imageURI) {

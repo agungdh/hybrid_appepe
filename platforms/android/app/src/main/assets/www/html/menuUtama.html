@@ -14,9 +14,10 @@
 		</div>
 	</div>
 	<center>
-		<div class="col-xs-4"><button id="kamera" class="btn btn-info"><i class="glyphicon glyphicon-camera"></i></button></div>
-		<div class="col-xs-4"><button id="galeri" class="btn btn-info"><i class="glyphicon glyphicon-picture"></i></button></div>
-		<div class="col-xs-4"><button id="video" class="btn btn-info"><i class="glyphicon glyphicon-facetime-video"></i></button></div>
+		<div class="col-xs-3"><button id="kamera" class="btn btn-info"><i class="glyphicon glyphicon-camera"></i></button></div>
+		<div class="col-xs-3"><button id="galeriKamera" class="btn btn-info"><i class="glyphicon glyphicon-picture"></i></button></div>
+		<div class="col-xs-3"><button id="galeriVideo" class="btn btn-info"><i class="glyphicon glyphicon-picture"></i></button></div>
+		<div class="col-xs-3"><button id="video" class="btn btn-info"><i class="glyphicon glyphicon-facetime-video"></i></button></div>
 	</center>
 </div>
 
@@ -25,8 +26,12 @@
 		ambilFoto();
 	});
 
-	$("#galeri").on('click', function () {
-		ambilFotoGaleri();
+	$("#galeriKamera").on('click', function () {
+		ambilFotoGaleriKamera();
+	});
+
+	$("#galeriVideo").on('click', function () {
+		ambilFotoGaleriVideo();
 	});
 
 	$("#video").on('click', function () {

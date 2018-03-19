@@ -331,6 +331,14 @@ module.exports = [
     "clobbers": [
       "VideoEditorOptions"
     ]
+  },
+  {
+    "id": "cordova-plugin-filepath.FilePath",
+    "file": "plugins/cordova-plugin-filepath/www/FilePath.js",
+    "pluginId": "cordova-plugin-filepath",
+    "clobbers": [
+      "window.FilePath"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -341,7 +349,8 @@ module.exports.metadata =
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-advanced-http": "1.11.0",
   "cordova-plugin-media-capture": "3.0.1",
-  "cordova-plugin-video-editor": "1.1.3"
+  "cordova-plugin-video-editor": "1.1.3",
+  "cordova-plugin-filepath": "1.0.2"
 };
 // BOTTOM OF METADATA
 });
